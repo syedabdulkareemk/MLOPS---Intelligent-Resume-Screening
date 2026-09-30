@@ -1,0 +1,5 @@
+# Problem Statement
+
+Contemporary talent acquisition and resource management processes suffer from systemic inefficiencies and a reliance on superficial matching heuristics. Traditional Applicant Tracking Systems (ATS) predominantly employ exact-keyword matching, which consistently fails to capture semantic equivalence (e.g., "Software Engineer" vs. "Backend Developer") or contextual nuance. 
+
+This semantic gap results in high false-negative rates, where qualified candidates are prematurely filtered out, and high false-positive rates, necessitating extensive manual review. Furthermore, existing systems lack predictive capabilities regarding candidate longevity and career progression. They treat candidate evaluation as a static event rather than a dynamic trajectory. There is a critical need for an intelligent system that models the complex relationships between disparate skills, evaluates candidates contextually, and provides transparent, explainable recommendations while maintaining stringent operational reliability through continuous model lifecycle management.

@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: talentlens
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: talentlens
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  neo4j:
+    image: neo4j:5.11
+    environment:
+      NEO4J_AUTH: neo4j/password
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4jdata:/data
+
+  mlflow:
+    image: bitnami/mlflow:2.6.0
+    ports:
+      - "5000:5000"
+    command: mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri sqlite:///mlflow.db
+    volumes:
+      - mlflowdata:/bitnami/mlflow
+
+  # backend and frontend will be run locally for development initially
+  # to allow easier testing and interaction.
+
+volumes:
+  pgdata:
+  neo4jdata:
+  mlflowdata:

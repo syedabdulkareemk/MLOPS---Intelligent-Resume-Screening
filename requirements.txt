@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+spacy
+sentence-transformers
+scikit-learn
+neo4j
+psycopg2-binary
+sqlalchemy
+mlflow
+dvc
+pytest
+requests
+python-multipart
+pandas
+numpy
+networkx
