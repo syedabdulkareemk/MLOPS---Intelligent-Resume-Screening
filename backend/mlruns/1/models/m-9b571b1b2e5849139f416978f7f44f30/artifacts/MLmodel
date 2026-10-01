@@ -1,0 +1,23 @@
+artifact_path: file:E:/C0LLEGE PROJECTS/MLOPS/TalentLens/backend/mlruns/1/models/m-9b571b1b2e5849139f416978f7f44f30/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.14.6
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+mlflow_version: 3.14.0
+model_id: m-9b571b1b2e5849139f416978f7f44f30
+model_size_bytes: 10906
+model_uuid: m-9b571b1b2e5849139f416978f7f44f30
+prompts: null
+run_id: d136f91797f346bcb11c71a88d529ac0
+utc_time_created: '2026-09-30 17:22:13.135198'

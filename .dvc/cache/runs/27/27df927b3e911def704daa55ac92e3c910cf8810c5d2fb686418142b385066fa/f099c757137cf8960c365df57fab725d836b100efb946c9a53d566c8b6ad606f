@@ -1,0 +1,15 @@
+cmd: python scripts/train.py
+deps:
+- path: data/training/features_v1.csv
+  hash: md5
+  md5: a1289bde4c2ace4660ad9c9aa4790848
+  size: 10237
+- path: ml/monitoring/pipeline.py
+  hash: md5
+  md5: 64792c03148b1f3fbfde8105e7cfff2b
+  size: 4165
+outs:
+- path: models/talentlens_ranker_v1.pkl
+  hash: md5
+  md5: be400f441124bf266e216a02ae5f4646
+  size: 1199

@@ -1,0 +1,5 @@
+Jane Doe
+Experienced Backend and ML Engineer
+Skills: Python, AWS, Docker, Terraform, CI/CD, SQL
+Experience: 4 years working as a Data Engineer building scalable pipelines.
+Projects: Built an automated training pipeline in AWS using Python.

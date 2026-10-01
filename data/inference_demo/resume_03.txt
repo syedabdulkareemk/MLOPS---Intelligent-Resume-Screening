@@ -1,0 +1,4 @@
+Alice Dev
+Experience: 5 years
+Skills: Python, Kubernetes, TensorFlow, AWS, PyTorch
+Projects: Deployed Kubernetes clusters for MLflow tracking and trained TensorFlow models on AWS.

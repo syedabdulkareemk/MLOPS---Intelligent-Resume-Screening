@@ -1,0 +1,8 @@
+Job Title: Senior MLOps Engineer
+We are seeking a Senior MLOps Engineer to deploy and monitor ML models.
+Requirements:
+- 4+ years of experience
+- Strong Python programming
+- Experience with Kubernetes and Docker
+- Familiarity with CI/CD pipelines
+- MLflow or DVC experience is a plus

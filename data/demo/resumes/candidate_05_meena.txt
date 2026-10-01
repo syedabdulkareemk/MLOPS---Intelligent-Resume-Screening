@@ -1,0 +1,4 @@
+Meena
+Experience: 1 year
+Skills: Python, HTML, CSS, JavaScript
+Projects: Built a small web application.

@@ -1,0 +1,4 @@
+Arun
+Experience: 5 years
+Skills: Python, Docker, Kubernetes, AWS, CI/CD, Terraform
+Projects: Built scalable MLOps pipelines.

@@ -1,31 +1,43 @@
 stages:
-  data_ingestion:
-    cmd: python src/ingest.py
+  prepare_data:
+    cmd: python scripts/prepare_data.py
     deps:
-      - src/ingest.py
-      - data/raw
+      - data/source/onet_subset_v31.csv
     outs:
-      - data/processed/ingested_data.csv
-  preprocessing:
-    cmd: python src/preprocess.py
+      - data/training/prepared_v1.csv
+
+  validate_data:
+    cmd: python scripts/validate_data.py
     deps:
-      - src/preprocess.py
-      - data/processed/ingested_data.csv
+      - data/training/prepared_v1.csv
+
+  preprocess:
+    cmd: python scripts/preprocess.py
+    deps:
+      - data/training/prepared_v1.csv
     outs:
-      - data/processed/features.csv
-  training:
-    cmd: python src/train.py
+      - data/training/preprocessed_v1.csv
+
+  build_features:
+    cmd: python scripts/build_features.py
     deps:
-      - src/train.py
-      - data/processed/features.csv
+      - data/training/preprocessed_v1.csv
     outs:
-      - models/model.pkl
-  evaluation:
-    cmd: python src/evaluate.py
+      - data/training/features_v1.csv
+
+  train:
+    cmd: python scripts/train.py
     deps:
-      - src/evaluate.py
-      - models/model.pkl
-      - data/processed/features.csv
+      - data/training/features_v1.csv
+      - ml/monitoring/pipeline.py
+    outs:
+      - models/talentlens_ranker_v1.pkl
+
+  evaluate:
+    cmd: python scripts/evaluate.py
+    deps:
+      - models/talentlens_ranker_v1.pkl
+      - data/training/features_v1.csv
     metrics:
       - metrics.json:
           cache: false

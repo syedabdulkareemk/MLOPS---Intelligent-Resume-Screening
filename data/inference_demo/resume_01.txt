@@ -1,0 +1,4 @@
+Jane Doe
+Experience: 4 years
+Skills: Python, AWS, Docker, CI/CD
+Projects: Built models with Python.

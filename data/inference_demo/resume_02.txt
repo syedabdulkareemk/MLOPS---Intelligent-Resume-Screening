@@ -1,0 +1,4 @@
+John Smith
+Experience: 2 years
+Skills: SQL, Tableau
+Projects: Dashboard creation.

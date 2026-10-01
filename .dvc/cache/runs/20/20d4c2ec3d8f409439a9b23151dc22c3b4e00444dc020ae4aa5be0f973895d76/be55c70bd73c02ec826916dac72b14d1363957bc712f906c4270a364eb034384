@@ -1,0 +1,11 @@
+cmd: python scripts/prepare_data.py
+deps:
+- path: data/source/onet_subset_v31.csv
+  hash: md5
+  md5: 91a2e3ea9dd50604c8ddb56ed897e806
+  size: 173
+outs:
+- path: data/training/prepared_v1.csv
+  hash: md5
+  md5: a1289bde4c2ace4660ad9c9aa4790848
+  size: 10237

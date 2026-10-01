@@ -1,0 +1,2 @@
+Job: Senior MLOps Engineer
+Requirements: 5+ years experience. Must have Python, Docker, Kubernetes, AWS, and CI/CD.

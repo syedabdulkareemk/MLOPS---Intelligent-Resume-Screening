@@ -1,0 +1,4 @@
+Rahul
+Experience: 6 years
+Skills: Docker, Linux, AWS, Terraform, CI/CD
+Projects: Managed infrastructure and deployment.

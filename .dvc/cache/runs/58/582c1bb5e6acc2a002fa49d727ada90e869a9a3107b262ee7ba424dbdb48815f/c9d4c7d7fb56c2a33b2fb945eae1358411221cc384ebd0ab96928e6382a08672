@@ -1,0 +1,15 @@
+cmd: python scripts/evaluate.py
+deps:
+- path: data/training/features_v1.csv
+  hash: md5
+  md5: a1289bde4c2ace4660ad9c9aa4790848
+  size: 10237
+- path: models/talentlens_ranker_v1.pkl
+  hash: md5
+  md5: be400f441124bf266e216a02ae5f4646
+  size: 1199
+outs:
+- path: metrics.json
+  hash: md5
+  md5: e853ab2d1188f14ff19dfb6e2b255485
+  size: 47

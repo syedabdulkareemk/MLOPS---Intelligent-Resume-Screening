@@ -1,0 +1,4 @@
+Priya
+Experience: 4 years
+Skills: Python, TensorFlow, PyTorch, SQL
+Projects: Trained deep learning models for NLP.

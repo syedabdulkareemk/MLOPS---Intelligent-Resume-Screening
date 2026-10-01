@@ -1,0 +1,11 @@
+cmd: python scripts/build_features.py
+deps:
+- path: data/training/preprocessed_v1.csv
+  hash: md5
+  md5: a1289bde4c2ace4660ad9c9aa4790848
+  size: 10237
+outs:
+- path: data/training/features_v1.csv
+  hash: md5
+  md5: a1289bde4c2ace4660ad9c9aa4790848
+  size: 10237

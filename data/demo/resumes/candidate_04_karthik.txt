@@ -1,0 +1,4 @@
+Karthik
+Experience: 3 years
+Skills: SQL, Python, Spark, Hadoop
+Projects: Big data ETL pipelines.
